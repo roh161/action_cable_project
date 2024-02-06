@@ -1,0 +1,7 @@
+<%= render 'form' %>
+
+<div id="messages">
+  <% Message.all.each do |message| %>
+    <p><%= message.content %></p>
+  <% end %>
+</div>

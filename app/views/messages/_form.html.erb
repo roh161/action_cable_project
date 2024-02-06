@@ -1,0 +1,4 @@
+<%= form_with(model: Message.new, id: "new_message", local: true) do |form| %>
+  <%= form.text_area :content, id: "message_content" %>
+  <%= form.submit "Send" %>
+<% end %>
